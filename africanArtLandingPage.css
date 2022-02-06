@@ -1,0 +1,162 @@
+body {
+    color: #FF8C00;
+    background-color: #000;
+    margin-top: 150px;
+    padding: 10px;
+    background-size: cover;
+    font-family: sans-serif;
+}
+
+h2,
+h3,
+h4,
+p {
+    font-family: serif;
+    font-style: italic;
+}
+
+h4 {
+    text-align: left;
+}
+
+h3 {
+    padding: 5px;
+    box-shadow: 0 0 10px 0 #f00;
+    border-radius: 15px;
+    color: #f00;
+}
+
+header li {
+    margin: 50px;
+}
+
+input {
+    color: #f00;
+    background-color: #000;
+    font-weight: bold;
+    border-style: none;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 #f00;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+button {
+    border-style: none;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    background-color: #FF8C00;
+    color: #000;
+    font-weight: bold;
+    box-shadow: 5px 5px 10px -6px #f00;
+}
+
+footer {
+    text-align: center;
+    left: 0;
+    right: 0;
+    top: 0;
+    display: block;
+    align-items: center;
+    background-image: url("https://c0.wallpaperflare.com/preview/239/723/610/wallpaper-background-jaguar-wildlife.jpg");
+}
+
+footer li a {
+    font-size: 0.9em;
+    font-weight: bolder;
+    margin: 10px;
+    color: #000;
+    text-decoration: none;
+}
+
+iframe {
+    margin: 0 auto;
+    display: block;
+    border-radius: 15px;
+    box-shadow: 0 0 20px 0 #FF8C00;
+}
+
+#header {
+    background-color: #000;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 25px 0 #f00;
+}
+
+#header * {
+    display: inline;
+}
+
+#header li a {
+    font-size: 0.9em;
+    font-weight: bold;
+    color: #f00;
+    text-decoration: none;
+}
+
+#form {
+    text-align: center;
+    background-image: url("https://c0.wallpaperflare.com/preview/239/723/610/wallpaper-background-jaguar-wildlife.jpg");
+}
+
+.detail {
+    display: flex;
+    justify-content: center;
+    margin: 100px;
+}
+
+.det {
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px 0 #FF8C00;
+}
+
+.feat {
+    display: flex;
+    justify-content: center;
+    margin: 100px;
+}
+
+.fet {
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px 0 #f00;
+}
+
+.sel {
+    font-size: small;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000;
+    background-color: #FF8C00;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+@media(max-width: 600px) {
+    .detail {
+        display: flex;
+        flex-direction: column;
+    }
+    .feat {
+        display: flex;
+        flex-direction: column;
+    }
+    iframe {
+        max-width: 100%;
+        height: auto;
+    }
+    header li {
+        margin: 10px;
+    }
+}
