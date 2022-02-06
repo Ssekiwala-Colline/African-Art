@@ -52,6 +52,10 @@ button {
     box-shadow: 5px 5px 10px -6px #f00;
 }
 
+ul {
+    list-style-type: none;
+}
+
 footer {
     text-align: center;
     left: 0;
