@@ -1,18 +1,21 @@
 body {
-    color: #FF8C00;
+    color: #fff;
     background-color: #000;
     margin-top: 150px;
     padding: 10px;
     background-size: cover;
-    font-family: sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h1 {
+    color: #000;
 }
 
 h2,
 h3,
 h4,
 p {
-    font-family: serif;
-    font-style: italic;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 h4 {
@@ -26,11 +29,8 @@ h3 {
     color: #f00;
 }
 
-header li {
-    margin: 50px;
-}
-
 input {
+    text-align: center;
     color: #f00;
     background-color: #000;
     font-weight: bold;
@@ -39,6 +39,9 @@ input {
     box-shadow: 0 0 10px 0 #f00;
     padding: 10px;
     margin-bottom: 20px;
+    width: 50%;
+    height: 30px;
+    font-size: 20px;
 }
 
 button {
@@ -50,9 +53,11 @@ button {
     color: #000;
     font-weight: bold;
     box-shadow: 5px 5px 10px -6px #f00;
+    cursor: pointer;
 }
 
-ul {
+ul li {
+    margin: 50px;
     list-style-type: none;
 }
 
@@ -79,10 +84,16 @@ iframe {
     display: block;
     border-radius: 15px;
     box-shadow: 0 0 20px 0 #FF8C00;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
 }
 
 #header {
-    background-color: #000;
+    background-color: #1e1d1b;
+    background-image: linear-gradient(315deg, #1e1d1b 0%, #cc9934 74%);
     position: fixed;
     left: 0;
     right: 0;
@@ -90,7 +101,8 @@ iframe {
     height: 150px;
     display: flex;
     align-items: center;
-    box-shadow: 0 0 25px 0 #f00;
+    justify-content: center;
+    /*box-shadow: 0 0 25px 0 #f00;*/
 }
 
 #header * {
@@ -104,9 +116,21 @@ iframe {
     text-decoration: none;
 }
 
+#header-img {
+    border-radius: 50%;
+}
+
 #form {
+    height: 50vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 2px;
     text-align: center;
     background-image: url("https://c0.wallpaperflare.com/preview/239/723/610/wallpaper-background-jaguar-wildlife.jpg");
+}
+
+.li1 {
+    padding: auto;
 }
 
 .detail {
@@ -126,7 +150,7 @@ iframe {
 .feat {
     display: flex;
     justify-content: center;
-    margin: 100px;
+    margin: 80px;
 }
 
 .fet {
@@ -145,22 +169,4 @@ iframe {
     background-color: #FF8C00;
     padding: 5px;
     border-radius: 15px;
-}
-
-@media(max-width: 600px) {
-    .detail {
-        display: flex;
-        flex-direction: column;
-    }
-    .feat {
-        display: flex;
-        flex-direction: column;
-    }
-    iframe {
-        max-width: 100%;
-        height: auto;
-    }
-    header li {
-        margin: 10px;
-    }
 }
