@@ -140,6 +140,9 @@ a {
 }
 
 .det {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     padding: 20px;
     margin: 20px;
@@ -154,6 +157,9 @@ a {
 }
 
 .fet {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     padding: 20px;
     margin: 20px;
